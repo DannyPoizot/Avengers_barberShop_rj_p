@@ -1,0 +1,25 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "abstracts/_variables.scss",
+        "abstracts/_mixins.scss",
+        "abstracts/_extends.scss",
+        "base/_reset.scss",
+        "base/_typography.scss",
+        "layout/_grid.scss",
+        "layout/_header.scss",
+        "layout/_footer.scss",
+        "components/_buttons.scss",
+        "pages/_home.scss",
+        "pages/_services.scss",
+        "pages/_shop.scss",
+        "pages/_gallery.scss",
+        "pages/_blog.scss",
+        "pages/_reservation.scss",
+        "pages/_contact.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
