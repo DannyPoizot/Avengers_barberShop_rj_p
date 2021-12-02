@@ -1,12 +1,12 @@
 .containerBlog{
-    text-align: center;
+    text-align: $text-align;
     font-size: 1.5vw;
     margin-bottom: 5em;
 }
 
 .containerBlog img{
     width: 20vw;
-    box-shadow: rgb(88, 32, 15)2px 3px 2px;
+    box-shadow: $color-brownDark 2px 3px 2px;
 }
 
 @media all and (max-width:1159px) {
@@ -23,7 +23,7 @@
 @media all and (max-width:1503px) {
     .containerBlog img{
         width: 25vw;
-        box-shadow: rgb(88, 32, 15)2px 3px 2px;
+        box-shadow: $color-brownDark 2px 3px 2px;
     }
 
     .containerBlog{
