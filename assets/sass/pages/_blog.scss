@@ -6,10 +6,10 @@
 
 .containerBlog img{
     width: 20vw;
-    box-shadow: $color-brownDark 2px 3px 2px;
+    @include blog-shadow($color-brownDark);
 }
 
-@media all and (max-width:1159px) {
+@include max-desktop {
 
     /* blog css */
 
@@ -20,10 +20,10 @@
     }
 }
 
-@media all and (max-width:1503px) {
+@include for-all {
     .containerBlog img{
         width: 25vw;
-        box-shadow: $color-brownDark 2px 3px 2px;
+        @include blog-shadow($color-brownDark);
     }
 
     .containerBlog{
