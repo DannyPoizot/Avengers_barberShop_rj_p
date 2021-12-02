@@ -4,3 +4,13 @@
 @mixin shop-shadow($colour) {
     box-shadow: $colour 2px 2px 2px;
 }
+@mixin for-phone-tablet{
+    @media (max-width: 800px){
+        @content;
+    }
+}
+@mixin for-all{
+    @media (max-width: 1503px){
+        @content;
+    }
+}

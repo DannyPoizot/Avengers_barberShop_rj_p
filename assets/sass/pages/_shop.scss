@@ -19,7 +19,7 @@
     @include shop-shadow($color-brownDark);
     grid-column: 3/6;
     grid-row: 1/5;
-    width: 80%;
+    @extend .w80;
     height: auto;
 }
 
@@ -27,7 +27,7 @@
     @include shop-shadow($color-brownDark);
     grid-column: 3/6;
     grid-row: 5/9;
-    width: 80%;
+    @extend .w80;
     height: auto;
 }
 
@@ -40,7 +40,7 @@
 }
 
 
-@media all and (max-width:800px) {
+@include for-phone-tablet {
     .imgShop{
         @extend .w100;
         display: flex;
@@ -55,20 +55,17 @@
     }
 }
 
-@media all and (max-width:1503px) {
+@include for-all{
     .imgShop{
-        width: 80%;
+        @extend .w80;
         display: flex;
         flex-direction: column;
     }
 
     .imgShop img{
-        text-align:center;
-        margin:auto;
-        display:flex;
-        text-align:center;
-        margin:auto;
-        display:flex;
+        margin: auto;
+        display: flex;
+        text-align: $text-align;
     }
 
     .imgShop_1, .imgShop_2, .imgShop_3, .imgShop_4{
