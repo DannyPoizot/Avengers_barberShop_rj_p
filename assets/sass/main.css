@@ -299,19 +299,7 @@ body {
             flex-direction: column;
     text-align: center;
   }
-  .imgShop_1 {
-    width: 100%;
-    height: auto;
-  }
-  .imgShop_2 {
-    width: 100%;
-    height: auto;
-  }
-  .imgShop_3 {
-    width: 100%;
-    height: auto;
-  }
-  .imgShop_4 {
+  .imgShop_1, .imgShop_2, .imgShop_3, .imgShop_4 {
     width: 100%;
     height: auto;
   }

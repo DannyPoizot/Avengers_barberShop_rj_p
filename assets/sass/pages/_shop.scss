@@ -8,7 +8,7 @@
 }
 
 .imgShop_1{
-    box-shadow: rgb(88, 32, 15) 2px 2px 2px;
+    @include shop-shadow($color-brownDark);
     grid-column: 1/3;
     grid-row: 1/8;
     width: 70%;
@@ -16,102 +16,61 @@
 }
 
 .imgShop_2{
-    box-shadow: rgb(88, 32, 15) 2px 2px 2px;
+    @include shop-shadow($color-brownDark);
     grid-column: 3/6;
     grid-row: 1/5;
-    width: 80%;
+    @extend .w80;
     height: auto;
 }
 
 .imgShop_3{
-    box-shadow: rgb(88, 32, 15) 2px 2px 2px;
+    @include shop-shadow($color-brownDark);
     grid-column: 3/6;
     grid-row: 5/9;
-    width: 80%;
+    @extend .w80;
     height: auto;
 }
 
 .imgShop_4{
-    box-shadow: rgb(88, 32, 15) 2px 2px 2px;
+    @include shop-shadow($color-brownDark);
     grid-column: 6/8;
     grid-row: 1/10;
-    width: 100%;
+    @extend .w100;
     height: auto;
 }
 
 
-@media all and (max-width:800px) {
+@include for-phone-tablet {
     .imgShop{
-        width: 100%;
+        @extend .w100;
         display: flex;
         flex-direction: column;
         text-align: center;
     }
 
-    .imgShop_1{
+    .imgShop_1, .imgShop_2, .imgShop_3, .imgShop_4{
         
-        width: 100%;
-        height: auto;
-    }
-    
-    .imgShop_2{
-       
-        width: 100%;
-        height: auto;
-    }
-    
-    .imgShop_3{
-        
-        width: 100%;
-        height: auto;
-    }
-    
-    .imgShop_4{
-       
-        width: 100%;
+        @extend .w100;
         height: auto;
     }
 }
 
-@media all and (max-width:1503px) {
+@include for-all{
     .imgShop{
-        width: 80%;
+        @extend .w80;
         display: flex;
         flex-direction: column;
-       
-        
     }
 
     .imgShop img{
-        text-align:center;
-        margin:auto;
-        display:flex;
-        text-align:center;
-        margin:auto;
-        display:flex;
+        margin: auto;
+        display: flex;
+        text-align: $text-align;
     }
 
-    .imgShop_1{
+    .imgShop_1, .imgShop_2, .imgShop_3, .imgShop_4{
         
-        width: 100%;
-        height: auto;
-    }
-    
-    .imgShop_2{
-       
-        width: 100%;
-        height: auto;
-    }
-    
-    .imgShop_3{
-        
-        width: 100%;
-        height: auto;
-    }
-    
-    .imgShop_4{
-       
-        width: 100%;
+        @extend .w100;
         height: auto;
     }
 }
