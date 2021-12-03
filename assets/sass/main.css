@@ -181,7 +181,7 @@ body {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-row-end: 1;
-  background-image: url("./../../img/banner.jpeg");
+  background-image: url("./../assets/img/banner.jpeg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -499,36 +499,6 @@ body {
 @media all and (max-width: 1503px) {
   .imgGallery {
     width: 80%;
-  }
-}
-
-.containerBlog {
-  text-align: center;
-  font-size: 1.5vw;
-  margin-bottom: 5em;
-}
-
-.containerBlog img {
-  width: 20vw;
-  -webkit-box-shadow: #58200f 2px 3px 2px;
-          box-shadow: #58200f 2px 3px 2px;
-}
-
-@media all and (max-width: 1159px) {
-  /* blog css */
-  .containerBlog {
-    font-size: 2.7vw;
-  }
-}
-
-@media all and (max-width: 1503px) {
-  .containerBlog img {
-    width: 25vw;
-    -webkit-box-shadow: #58200f 2px 3px 2px;
-            box-shadow: #58200f 2px 3px 2px;
-  }
-  .containerBlog {
-    font-size: 3vw;
   }
 }
 
